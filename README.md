@@ -17,13 +17,13 @@ A flexible and customizable image upload package for React applications, designe
 To install the package, run the following command:
 
 ```bash
-npm install image-upload-package
+npm install ReactImageUploader
 ```
 
 or
 
 ```bash
-yarn add image-upload-package
+yarn add ReactImageUploader
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ yarn add image-upload-package
 The `FileUpload` component handles file uploads and integrates with React Hook Form.
 
 ```tsx
-import { FileUpload } from 'image-upload-package';
+import { FileUpload } from "ReactImageUploader";
 
 const MyForm = () => {
   return (
@@ -50,7 +50,7 @@ const MyForm = () => {
 The `ImagePreview` component displays a preview of the uploaded images.
 
 ```tsx
-import { ImagePreview } from 'image-upload-package';
+import { ImagePreview } from "ReactImageUploader";
 
 const MyPreview = ({ files }) => {
   return <ImagePreview files={files} />;
@@ -62,7 +62,7 @@ const MyPreview = ({ files }) => {
 The `ProgressBar` component visually indicates the upload progress.
 
 ```tsx
-import { ProgressBar } from 'image-upload-package';
+import { ProgressBar } from "ReactImageUploader";
 
 const MyProgress = ({ progress }) => {
   return <ProgressBar value={progress} />;
