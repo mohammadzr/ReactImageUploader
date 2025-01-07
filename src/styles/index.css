@@ -1,0 +1,7 @@
+/* This file contains the global styles for the package, including Tailwind CSS configurations and any additional custom styles. */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional custom styles can be added below */

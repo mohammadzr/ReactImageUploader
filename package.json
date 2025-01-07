@@ -1,0 +1,35 @@
+{
+  "name": "image-upload-package",
+  "version": "1.0.0",
+  "description": "A customizable image upload package for React applications, utilizing ShadCN and Tailwind for styling, and compatible with React Hook Form.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "webpack serve --mode development",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "image-upload",
+    "file-upload",
+    "react-hook-form",
+    "tailwind",
+    "shadcn"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-hook-form": "^7.0.0",
+    "tailwindcss": "^2.0.0",
+    "shadcn": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "jest": "^26.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "babel-loader": "^8.0.0"
+  }
+}
