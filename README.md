@@ -42,9 +42,9 @@ yarn add react-image-uploader
 The `FileUpload` component handles file uploads and integrates with various form libraries.
 
 ```tsx
-import React from 'react';
-import { useForm, Controller } from 'react-hook-form';
-import { FileUpload } from 'react-image-uploader';
+import React from "react";
+import { useForm, Controller } from "react-hook-form";
+import { FileUpload } from "react-image-uploader";
 
 const MyForm = () => {
   const { control } = useForm();
@@ -61,7 +61,7 @@ const MyForm = () => {
             formLibrary="react-hook-form"
             maxFiles={5}
             maxSize={5 * 1024 * 1024}
-            accept={{ 'image/*': ['.jpeg', '.jpg', '.png', '.webp'] }}
+            accept={{ "image/*": [".jpeg", ".jpg", ".png", ".webp"] }}
             showPreview={true}
             showProgress={true}
             allowCompression={true}
@@ -93,11 +93,20 @@ export default MyForm;
 The `ProgressBar` component visually indicates the upload progress.
 
 ```tsx
-import React from 'react';
-import { ProgressBar } from 'react-image-uploader';
+import React from "react";
+import { ProgressBar } from "react-image-uploader";
 
 const MyProgress = ({ progress }) => {
-  return <ProgressBar progress={progress} height="4px" color="bg-green-500" backgroundColor="bg-gray-300" showLabel={true} labelPosition="outside" />;
+  return (
+    <ProgressBar
+      progress={progress}
+      height="4px"
+      color="bg-green-500"
+      backgroundColor="bg-gray-300"
+      showLabel={true}
+      labelPosition="outside"
+    />
+  );
 };
 
 export default MyProgress;
@@ -110,15 +119,24 @@ export default MyProgress;
 The `ImagePreview` component displays a preview of the uploaded images.
 
 ```tsx
-import React from 'react';
-import { ImagePreview } from 'react-image-uploader';
+import React from "react";
+import { ImagePreview } from "react-image-uploader";
 
 const MyPreview = ({ files }) => {
-  return <ImagePreview files={files} onRemove={(file) => { /* Handle file removal */ }} />;
+  return (
+    <ImagePreview
+      files={files}
+      onRemove={(file) => {
+        /* Handle file removal */
+      }}
+    />
+  );
 };
 
 export default MyPreview;
 ```
+
+---
 
 ---
 
@@ -127,11 +145,13 @@ export default MyPreview;
 The `ImageCropper` component allows users to crop images before uploading.
 
 ```tsx
-import React from 'react';
-import { ImageCropper } from 'react-image-uploader';
+import React from "react";
+import { ImageCropper } from "react-image-uploader";
 
 const MyCropper = ({ file, onComplete, onCancel }) => {
-  return <ImageCropper file={file} onComplete={onComplete} onCancel={onCancel} />;
+  return (
+    <ImageCropper file={file} onComplete={onComplete} onCancel={onCancel} />
+  );
 };
 
 export default MyCropper;
